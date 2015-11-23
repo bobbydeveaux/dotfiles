@@ -1,0 +1,93 @@
+[user]
+	user = mattoddie
+	email = github@mattoddie.com
+	name = Matt Oddie
+
+[github]
+	user = mattoddie
+
+[alias]
+	lp = log -p
+	co = checkout
+	st = status
+	br = branch
+	dc = diff --cached --patience
+	ci = commit
+	di = diff --patience -w
+	sit = submodule init
+	lol = log --decorate --graph --oneline
+	lola = log --decorate --graph --oneline --all
+	count = !git shortlog -sn
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	mg = merge -s recursive -X patience
+	smst = submodule status
+	sup = submodule update --init --recursive
+
+[color]
+	ui = auto
+
+[hub]
+	protocol = https
+
+[core]
+	# Default editor
+	editor = vim
+
+	# Use custom `.gitignore` and `.gitattributes`
+	excludesfile = ~/.gitignore
+	attributesfile = ~/.gitattributes
+
+	# Make `git rebase` safer on OS X
+	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
+	trustctime = false
+
+	# Prevent showing files whose names contain non-ASCII symbols as unversioned.
+	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
+	precomposeunicode = false
+
+[diff]
+	algorithm = patience
+	# Detect copies as well as renames
+	renames = copies
+
+[diff "bin"]
+	# Use `hexdump` to diff binary files
+	textconv = hexdump -v -C
+
+[help]
+	# Automatically correct and execute mistyped commands
+	autocorrect = 1
+
+# Use SSH instead of HTTPS
+
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+
+[url "git@bitbucket.org/"]
+	insteadOf = https://bitbucket.org/
+
+# URL shorthands
+
+[url "git@github.com:"]
+	insteadOf = "gh:"
+	pushInsteadOf = "github:"
+	pushInsteadOf = "git://github.com/"
+
+[url "git://github.com/"]
+	insteadOf = "github:"
+
+[url "git@gist.github.com:"]
+	insteadOf = "gst:"
+	pushInsteadOf = "gist:"
+	pushInsteadOf = "git://gist.github.com/"
+
+[url "git://gist.github.com/"]
+	insteadOf = "gist:"
+
+[url "git@bitbucket.org:"]
+	insteadOf = "bb:"
+
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true

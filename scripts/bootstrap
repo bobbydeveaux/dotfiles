@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+set -e
+# bootstrap installs things.
+
+DOTFILES_BIN=$(dirname "${BASH_SOURCE}")
+DOTFILES_ROOT=$(cd $DOTFILES_BIN && cd .. && pwd)
+
+source ${DOTFILES_ROOT}/lib/utils
+
+echo ''
+
+link_files "${DOTFILES_ROOT}/bash/bash_profile" "$HOME/.bash_profile"
+link_files "${DOTFILES_ROOT}/shell/zshenv" "$HOME/.zshenv"
+link_files "${DOTFILES_ROOT}/shell/zshrc" "$HOME/.zshrc"
+link_files "${DOTFILES_ROOT}/system/curlrc" "$HOME/.curlrc"
+link_files "${DOTFILES_ROOT}/system/screenrc" "$HOME/.screenrc"
+link_files "${DOTFILES_ROOT}/system/wgetrc" "$HOME/.wgetrc"
+link_files "${DOTFILES_ROOT}/git/gitconfig" "$HOME/.gitconfig"
+link_files "${DOTFILES_ROOT}/git/gitignore" "$HOME/.gitignore"
+link_files "${DOTFILES_ROOT}/git/gitattributes" "$HOME/.gitattributes"
+link_files "${DOTFILES_ROOT}/vim/vimrc" "$HOME/.vimrc"
+link_files "${DOTFILES_ROOT}/vim" "$HOME/.vim"
+link_files "${DOTFILES_ROOT}/atom" "$HOME/.atom"
+
+echo ''
+echo '  All installed!'

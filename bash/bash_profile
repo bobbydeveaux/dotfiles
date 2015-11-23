@@ -1,0 +1,20 @@
+source ~/.dotfiles/bash/git-completion.bash
+source ~/.dotfiles/bash/git-prompt.sh
+
+GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWUNTRACKEDFILES=true
+GIT_PS1_SHOWCOLORHINTS=true
+GIT_PS1_SHOWUPSTREAM="auto"
+GIT_PS1_SHOWSTASHSTATE=true
+LIGHTNING_BOLT=$'\xE2\x9A\xA1'
+PROMPT_COMMAND='__git_ps1 "\W" "$LIGHTNING_BOLT "'
+
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export GOPATH=$HOME/go
+export GO15VENDOREXPERIMENT=1
+
+# Lock the screen (when going AFK)
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"

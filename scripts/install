@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -e
+# Download and install dotfiles
+
+[ -d $HOME/.dotfiles ] && echo "Already installed" && exit 1
+
+git clone https://github.com/mattoddie/dotfiles.git ${HOME}/.dotfiles
+
+${HOME}/.dotfiles/scripts/bootstrap

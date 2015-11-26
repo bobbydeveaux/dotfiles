@@ -44,7 +44,7 @@ if [[ "$TERM" == "screen" ]]; then
 fi
 
 # Force local path first
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=$GOPATH/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 alias reload!='. ~/.zshrc'
 alias ll='ls -la'

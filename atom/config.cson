@@ -1,10 +1,10 @@
 "*":
   editor:
-    fontSize: 12
     tabLength: 4
     invisibles: {}
     showIndentGuide: true
     showInvisibles: true
+    fontSize: 11
   core:
     themes: [
       "atom-dark-ui"
@@ -24,7 +24,8 @@
   metrics:
     userId: "95147fa2cf488c1315bdee4d53f4cfdb4815c189"
   "git-plus": {}
-  "go-plus": {}
+  "go-plus":
+    lintOnSave: false
   "autocomplete-plus": {}
   "tree-view":
     sortFoldersBeforeFiles: false

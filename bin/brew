@@ -49,7 +49,6 @@ brew install ansible
 brew install autoconf
 brew install automake
 brew install bazaar
-brew install consul
 brew install csshx
 brew install deis
 brew install git
@@ -62,15 +61,22 @@ brew install hugo
 brew install jq
 brew install libtool
 brew install mercurial
+brew install mongodb
 brew install n
-brew install nomad
 brew install packer
+brew install pcre
 brew install protobuf --devel
+brew install redis
 brew install terraform
 brew install thefuck
 brew install tree
 brew install wget
 brew install zsh
+
+brew install caskroom/cask/brew-cask
+brew cask install nomad
+brew cask install consul
+brew cash install terraform
 
 # Remove outdated versions from the cellar.
 brew cleanup

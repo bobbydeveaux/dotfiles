@@ -43,8 +43,12 @@ if [[ "$TERM" == "screen" ]]; then
 	export PS1="%{$bg[white]%}%{$fg_bold[blue]%} SCREEN $reset_color%} $PS1"
 fi
 
+if [ -n "$DOCKER_HOST" ]; then
+	export PS1="%{$bg[white]%}%{$fg_bold[blue]%} DOCKER $reset_color%} $PS1"
+fi
+
 # Force local path first
-export PATH=$GOPATH/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=$GOPATH/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
 
 alias reload!='. ~/.zshrc'
 alias ll='ls -la'

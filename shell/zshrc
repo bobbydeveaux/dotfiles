@@ -31,7 +31,7 @@ export REPORTTIME=30
 # Skip the rest of this for non-interactive shells
 [ -z "$PS1" ] && return
 
-plugins=(aws heroku brew vagrant bundler screen sublime golang urltools node npm thefuck)
+plugins=(aws heroku brew vagrant bundler screen sublime golang urltools node npm thefuck docker)
 
 [[ -s "$ZSH/oh-my-zsh.sh" ]] && source $ZSH/oh-my-zsh.sh
 unsetopt correct

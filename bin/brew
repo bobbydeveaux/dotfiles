@@ -66,6 +66,7 @@ brew install n
 brew install packer
 brew install pcre
 brew install protobuf --devel
+brew install pv
 brew install redis
 brew install terraform
 brew install thefuck

@@ -63,21 +63,22 @@ brew install libtool
 brew install mercurial
 brew install mongodb
 brew install n
-brew install packer
 brew install pcre
 brew install protobuf --devel
 brew install pv
 brew install redis
-brew install terraform
 brew install thefuck
 brew install tree
 brew install wget
 brew install zsh
 
 brew install caskroom/cask/brew-cask
+brew cask install packer
 brew cask install nomad
 brew cask install consul
-brew cash install terraform
+brew cask install terraform
+brew cask install otto
+brew cask install vagrant
 
 # Remove outdated versions from the cellar.
 brew cleanup

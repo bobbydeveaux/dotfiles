@@ -1,32 +1,32 @@
 "*":
-  editor:
-    tabLength: 4
-    invisibles: {}
-    showIndentGuide: true
-    showInvisibles: true
-    fontSize: 11
+  "autocomplete-plus": {}
   core:
-    themes: [
-      "atom-dark-ui"
-      "atom-dark-syntax"
-    ]
     ignoredNames: [
       ".git"
       ".svn"
       ".DS_Store"
     ]
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+  editor:
+    fontSize: 10
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+    tabLength: 4
   "exception-reporting":
     userId: "34edb9a4-500d-d1d8-8ba1-25d3cb58f46d"
-  "release-notes":
-    viewedVersion: "0.85.0"
-  welcome:
-    showOnStartup: false
-  metrics:
-    userId: "95147fa2cf488c1315bdee4d53f4cfdb4815c189"
   "git-plus": {}
   "go-plus":
     lintOnSave: false
-  "autocomplete-plus": {}
+  "merge-conflicts": {}
+  metrics:
+    userId: "95147fa2cf488c1315bdee4d53f4cfdb4815c189"
+  "release-notes":
+    viewedVersion: "0.85.0"
   "tree-view":
     sortFoldersBeforeFiles: false
-  "merge-conflicts": {}
+  welcome:
+    showOnStartup: false

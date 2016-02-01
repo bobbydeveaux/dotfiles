@@ -63,8 +63,13 @@
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
 
-[url "git@bitbucket.org/"]
+[url "ssh://git@bitbucket.org:"]
 	insteadOf = https://bitbucket.org/
+
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
 
 # URL shorthands
 
@@ -86,8 +91,3 @@
 
 [url "git@bitbucket.org:"]
 	insteadOf = "bb:"
-
-[filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true

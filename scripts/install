@@ -4,6 +4,6 @@ set -e
 
 [ -d $HOME/.dotfiles ] && echo "Already installed" && exit 1
 
-git clone https://github.com/mattoddie/dotfiles.git ${HOME}/.dotfiles
+git clone https://github.com/bobbydeveaux/dotfiles.git ${HOME}/.dotfiles
 
 ${HOME}/.dotfiles/scripts/bootstrap

@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-curl -s https://raw.githubusercontent.com/mattoddie/dotfiles/master/scripts/install | bash
+curl -s https://raw.githubusercontent.com/bobbydeveaux/dotfiles/master/scripts/install | bash
 ```
 
 ## Homebrew

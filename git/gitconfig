@@ -7,6 +7,7 @@
 	user = bobbydeveaux
 
 [alias]
+	pl = pull --rebase
 	lp = log -p
 	co = checkout
 	st = status
@@ -91,3 +92,5 @@
 
 [url "git@bitbucket.org:"]
 	insteadOf = "bb:"
+[branch]
+	autosetuprebase = always

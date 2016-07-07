@@ -48,7 +48,7 @@ if [ -n "$DOCKER_HOST" ]; then
 fi
 
 # Force local path first
-export PATH=$GOPATH/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
+export PATH=$GOPATH/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/opt/gettext/bin
 
 alias reload!='. ~/.zshrc'
 alias ll='ls -la'

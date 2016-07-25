@@ -49,6 +49,7 @@ fi
 
 # Force local path first
 export PATH=$GOPATH/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/opt/gettext/bin
+export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"
 
 alias reload!='. ~/.zshrc'
 alias ll='ls -la'

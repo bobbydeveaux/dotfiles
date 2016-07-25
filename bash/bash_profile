@@ -19,3 +19,4 @@ PATH=/usr/local/git/bin:\$PATH
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+[[ -s ~/.bashrc ]] && source ~/.bashrc
